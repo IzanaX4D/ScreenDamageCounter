@@ -69,10 +69,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Behaviour)
 	void SetValue(const float& Value, const FColor& Color = FColor::White);
 
+	/** Set value from container of the parameter. */
 	UFUNCTION(BlueprintCallable, Category = Behaviour)
 	void SetFromParam(FScreenDamageParameter Parameter);
 		
-	/** Condition Design when the slate widget is paste in white color. */
+	/** Condition Design when the slate widget is paste in white color as a Custom Color will run in this event. */
 	UFUNCTION(BlueprintNativeEvent, Category = Design)
 	void OnColorPaste(const FColor& Color);
 

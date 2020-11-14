@@ -9,6 +9,6 @@ public class ScreenDamageNumberTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "ScreenDamageNumber" } );
+		ExtraModuleNames.AddRange( new string[] { "ScreenDamageNumber", "WorldWidget" } );
 	}
 }

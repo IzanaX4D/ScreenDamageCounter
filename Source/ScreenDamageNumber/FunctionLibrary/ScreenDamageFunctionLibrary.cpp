@@ -33,7 +33,7 @@ void UScreenDamageFunctionLibrary::ShowScreenDamage(UObject* WorldContext, UObje
 		CachedSlateWidget->AddToPlayerScreen();
 		
 		CachedSlateWidget->WorldPosition = WorldPosition;
-		CachedSlateWidget->SetSubtitle(SubtitleText, FColor(Color));
+		CachedSlateWidget->SetSubtitle(SubtitleText, Color.Quantize());
 		CachedSlateWidget->SetValue(Value, Color.ToFColor(false));
 	}
 
